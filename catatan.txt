@@ -1,0 +1,183 @@
+JAVA SCRIPT
+    tanda + dalam java script memiliki 2 fungsi
+    - jika operannya adalah angka akan menjadi operator aritmatika
+    - jika operannya adalah string akan menjadi operator penggabung string
+
+TIPE DATA PADA 
+    1. angka
+    2. string
+        digunakan untuk merpresentasikan data tekstual(plain text)
+        ""
+        ''
+            mengawali kutip " harus diakhiri kutip "
+            jika didalam kutip " ada kutip ' sebaiknya menggunakan kutip " begitupun sebaliknya
+                "hari jum'at"
+                'makan "sayur" '
+        
+        - escape character -> menampilkan sebuah karakter yang diinter presentasikan berbeda 
+            dalam sebuah bahasa pemrograman dengan menambah tanda backslash (\) 
+            \0 -> karakter null
+            \' -> '
+            \" -> "
+            \\ -> \
+            \n -> new line/ baris baru
+            \t -> tab
+            \b -> backspce
+            \uxxx -> unicode
+
+        - concatenation (+)
+        - membandingkan dua buah string 
+            "Kholifah Ayu" == "kholifah ayu"
+            false
+             karena disini huruf besar dan kecil berbeda
+        - .length
+            -> untuk mengetahui jumlah karakter didalam string
+            kholifah ayu
+            12 character spasi juga termasuk karakter
+
+    3. boolean
+        -> sebuah tipe data yang digunakan untuk merpresentasikan logika true atau false
+        -> diciptakan oleh george boole           
+
+OPERATOR
+    1. Binary
+        - aritmatika
+            +, -, *, /, %
+            contoh:
+            1+1
+            2
+            urutan operasi matematika (operator precedence 
+            (KuKaBaTaKu-> Kurung Kali Bagi Tambah Kurang))
+        - penugasan (assigment)
+            x += y -> x = x+y
+            x -= y -> x = x-y 
+            x *= y -> x = x*y
+            x /= y -> x = x/y
+            x %= y -> x = x%y
+
+            contoh:
+            x = 10
+            x += 3
+            13
+
+        - perbandingan (comparison)
+          sebuah perbandingan yang menghasilkan boleean (true, false)
+            == sama dengan
+            != tidak sama dengan
+            === strict sama dengan -> tidak hanya membandingkan nilai tapi juga membandingkan tipe datanya
+            !== strict tidak sama dengan
+            > lebih besar dari
+            < lebih kecil dari
+            >= lebih besar sama dengan
+            <= lebih kecil sama dengan  
+
+            contoh
+            10 == 10
+            true
+            10 == 12
+            false
+
+        - logika
+
+            && and -> jika salah satu benar akan bernilai false
+            || or -> jika salah satu benar akan bernilai true
+            ! not -> membalikkan hasil sebenarnya
+
+            contoh
+            x = 10
+            (x * 2 == 20) && (x < 10)
+            false
+            (x * 2 == 20) || (x < 10)
+            true
+            (x * 2 == 20) ! (x < 30 )
+            false
+        - string
+            + -> penggabung string
+
+            contoh
+            var a
+            var b 
+            a="apple"
+            b="pen"
+            a+b
+            "applepen"
+
+
+    2. Ternary
+        - kondisional
+            pengecekan pada suatu kondisi dan menetukan nilai 
+            yang dihasilkan ketika kondisinya bernilai true atau false
+
+            (kondisi) ? benar : salah
+            x = 10
+            (x % 2 == 0) ? "genap" : "ganjil"
+            genap
+
+        - typeof
+            untuk mengetahui tipe data dari sebuah nilai
+
+            contoh
+            typeof(10)
+            number
+
+VARIABLE
+    -> sebuah tempat atau wadah yang mempunyai nama yang berfungsi untuk menyimpan suatu nilai
+    - deklarasi -> mendaftarkan variable dalam lingkup yang sesuai
+    - inisialisasi -> menyediakan memori untuk variable
+    - assignment -> menetapkan nilai yang spesifik ke dalam variable
+        var x; -> deklarasi & inisialisasi
+         x = 20;
+
+    - untuk mendeklarasikan sebuah variable kita bisa gunakan :
+        var <nama_variable>
+
+    - Aturan pembuatan variable
+        -> tidak bole ada spasi
+        -> tidak boleh diawali dengan angka tapi boleh dengan angka
+            1tidakBoleh
+            boleh1
+
+CARA PENULISAN JAVASCRIPT
+    - internal
+        menuliskan javascript langsung di tag script dihalaman website
+            -ditempatkan di head ataupun diakhir sebelum penutup body
+    - eksternal
+        membuat file terpisah untuk menuliskan javascript nya
+
+POPUP BOX/DIALOG BOX
+    - alert
+        alert('hello world');
+    - prompt 
+        berupa inputan yang otomatis akan menjadi string
+    - confirm
+        -> meminta informasi pada user
+
+CONTROL FLOW
+    -> alur kendali dalam sebuah progaram
+
+    - pengulangan (loop/iteration)
+        meng eksekusi sebuah program lebih dari satu
+        - for
+        - while
+            - buat nilai awal
+            - tentukan kondisi
+            - increment(++)/decrement(--)
+        - do while
+
+    - pengkodisisan (percabangan)
+
+
+FUNCTION 
+    - merupakan sub program / sub-routine yang dapat dipanggil dibagian lain pada program
+    - merupakan struktur dasar pembentuk dari java script
+    - disebut juga sebagai prosedur (kumpulan statement untuk melakukan tugas atau menghitung sebuah nilai)
+    - untuk dapat mengunakannya kita harus membuat terlebih dahulu function tersebut , lalu memanggilnnya
+    - termasuk kedalam first-class object
+
+    kenapa harus function?
+    -reusability (DRY: DO NOT REPEAT YOURSELF)
+    -dekomposisi / abstraksi (menyembunyikan kompleksitas)
+    -modularitas (memudahkan saat menelusuri kesalahan saat  proses debugging)
+
+    kategori function
+    -built-in function
